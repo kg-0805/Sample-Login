@@ -1,0 +1,24 @@
+<?php
+ $usr="root";
+ $pwd="root";
+
+if(isset($_POST['username']) && !empty($_POST['username']) && isset($_POST['password']) && !empty($_POST['password']) ){
+
+$username=$_POST['username'];
+$password=$_POST['password'];
+
+ 
+			if(($username==$usr) && ($password==$pwd) ){
+
+								echo '<br>login successfull';
+                                header("Location: https://www.guptakartik.in");
+
+				}else{
+
+							echo '<br>login unsuccessfull';
+                            header("Location: http://localhost/samplelogin/");
+							}
+	}else{
+			echo "<br>Connot be left empty!";
+			}
+?>
