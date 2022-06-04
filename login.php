@@ -16,7 +16,7 @@ $password=$_POST['password'];
 				}else{
 
 							echo '<br>login unsuccessfull';
-                            header("Location: http://localhost/samplelogin/");
+                            header("Location: https://jovial-nasturtium-95a4a2.netlify.app/");
 							}
 	}else{
 			echo "<br>Connot be left empty!";
